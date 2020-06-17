@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link href="/styles/style.css" rel="stylesheet" />
+    <title>Quidax Book Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Navigation Area -->
+        <nav class="navigation-row">
+          <div class="row mobile-search-area" id="mobile-search-area">
+            <div class="col-sm-2 goback-icon-container-top-nav">
+              <img
+                class="back-icon-top-mobile-nav"
+                src="/assets/images/backIcon.svg"
+                alt="go back"
+                id="back-icon-top-nav"
+              />
+            </div>
+            <div class="col-sm-10">
+              <div class="search-section-container">
+                <input
+                  class="seach"
+                  type="text"
+                  name="search"
+                  autocomplete="off"
+                  id="search-mobile"
+                  placeholder="Search book, authors, genres, etc."
+                />
+                <button
+                  class="search-icon-mobile"
+                  id="search-icon-mobile-button"
+                >
+                  <img
+                    src="/assets/images/searchIcon.svg"
+                    alt="search icon"
+                    srcset=""
+                  />
+                </button>
+              </div>
+              <div class="search-result-mobile" id="search-result-mobile">
+                <h5>Four steps to epiphany - revised</h5>
+                <h5>Four steps to epiphany - revised</h5>
+                <h5>Four steps to epiphany - revised</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2 col-l-3 drawer-container">
+              <div class="drawer-icon" id="drawer-icon">
+                <div class="drawer-icon-line"></div>
+                <div class="drawer-icon-line middle-line"></div>
+                <div class="drawer-icon-line"></div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-l-3 navigation-section-logo">
+              <div class="company-logo company-log-navigation">
+                <img src="/assets/images/logo.png" alt="" class="logo" />
+              </div>
+              <div class="company-title-contianer">
+                <h2 class="header-title-mobile">Quidax book club</h2>
+                <h3 class="user-role">Admin</h3>
+              </div>
+            </div>
+            <div class="col-l-5 search-section-desktop">
+              <div class="search-section-wrapper">
+                <div class="search-section-container">
+                  <input
+                    class="seach"
+                    type="text"
+                    name="search"
+                    autocomplete="off"
+                    id="search-desktop"
+                    placeholder="search book, authors, genres, etc."
+                  />
+                  <button class="search-icon-desktop" id="search-icon-desktop">
+                    <img
+                      src="/assets/images/searchIcon.svg"
+                      alt="search icon"
+                      srcset=""
+                    />
+                  </button>
+                </div>
+                <div class="search-result-destop" id="search-result-desktop">
+                  <h5>Four steps to epiphany - revised</h5>
+                  <h5>Four steps to epiphany - revised</h5>
+                  <h5>Four steps to epiphany - revised</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-7 col-l-4 nav-notficaiton-container">
+              <div class="row nav-notifications-section">
+                <div class="col-sm-3 search-icon-section">
+                  <div class="search-icon-container">
+                    <img
+                      src="/assets/images/searchIcon.svg"
+                      alt="search icon"
+                      id="search-icon-mobile"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-3 book-logo-contianer">
+                  <img
+                    src="/assets/images/blackLogo.png"
+                    alt="company logo"
+                    class="book-logo"
+                  />
+                </div>
+                <div class="col-sm-3 nofication-icon-section">
+                  <div class="nofition-icon-container">
+                    <img
+                      class="nofication-icon"
+                      src="/assets/images/notificationIcon.svg"
+                      alt="nofication icon"
+                    />
+                    <div class="nav-number-notification">
+                      <h4>3</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="company-logo user-image-container">
+                    <img
+                      class="user-image"
+                      src="/assets/images/user.jpg"
+                      alt="user"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Body Area -->
+        <div class="row main-body">
+          <!-- Side Navigation -->
+          <div
+            class="col-sm-12 side-navigation-mobile col-l-3"
+            id="side-navigation-mobile"
+          >
+            <div class="side-nav-item-contianer">
+              <div class="col-sm-12 goback-icon-container">
+                <img
+                  src="/assets/images/backIcon.svg"
+                  alt="go back"
+                  id="back-icon"
+                />
+              </div>
+              <div class="header-mobile-secton">
+                <div class="company-logo"></div>
+                <div class="company-details">
+                  <h2 class="header-title-mobile">Quidax book club</h2>
+                  <h3 class="user-role">Admin</h3>
+                </div>
+              </div>
+              <div class="side-nav-items-section">
+                <h4 class="home-nav-item">Home</h4>
+                <h4>Profile</h4>
+                <h4>Notifications</h4>
+                <span class="number-of-notification">3</span>
+              </div>
+              <hr class="horizontal-rule" />
+              <div class="side-nav-items-section">
+                <h3>Explore</h3>
+                <div class="side-nav-item">
+                  <h4>Books</h4>
+                  <h4 class="number-of-item">273</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>genres</h4>
+                  <h4 class="number-of-item">42</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>authors</h4>
+                  <h4 class="number-of-item">106</h4>
+                </div>
+              </div>
+              <hr class="horizontal-rule" />
+              <div class="side-nav-items-section">
+                <h3>my books</h3>
+                <div class="side-nav-item">
+                  <h4>qeued</h4>
+                  <h4 class="number-of-item">3</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>currently borrowed</h4>
+                  <h4 class="number-of-item">0</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>favourite</h4>
+                  <h4 class="number-of-item">19</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>history</h4>
+                </div>
+              </div>
+              <hr class="horizontal-rule" />
+              <div class="side-nav-items-section">
+                <h3>Admin</h3>
+                <div class="side-nav-item">
+                  <h4>Book requests</h4>
+                  <h4 class="number-of-item number-of-item-book">2</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>members</h4>
+                  <h4 class="number-of-item">34</h4>
+                </div>
+                <div class="side-nav-item">
+                  <h4>library settings</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main body -->
+          <div class="col-sm-12 books-section col-l-9">
+            <div class="row carousel-section">
+              <div
+                class="section-title-container section-title-container-carousel"
+              >
+                <h3 class="section-title">Featured books</h3>
+                <div class="horizontal-rule"></div>
+              </div>
+              <div class="main-carousel">
+                <div class="carousel-cell">
+                  <img
+                    class="book-cover-image-carousel"
+                    src="/assets/images/bigm.jpg"
+                    alt="book cover"
+                  />
+                  <div class="book-details-carousel">
+                    <div
+                      class="col-sm-12 col-l-9 book-details carosel-book-info"
+                    >
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu</h4>
+                        <h4 class="info">2001</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="col-sm-12 col-l-6 book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule visibility-prop"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/Group 13.png"
+                              alt="users icon"
+                              class="users-icon carousel-users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/Group 6.png"
+                              alt="users icon "
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more-info">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <div class="cancel-icon">
+                    &times;
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <img
+                    class="book-cover-image-carousel"
+                    src="/assets/images/effectiveEngineer.jpg"
+                    alt="book cover"
+                  />
+                  <div class="book-details-carousel">
+                    <div
+                      class="col-sm-12 col-l-9 book-details carosel-book-info"
+                    >
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu</h4>
+                        <h4 class="info">2001</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="col-sm-12 col-l-6 book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule visibility-prop"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/Group 13.png"
+                              alt="users icon"
+                              class="users-icon carousel-users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/Group 6.png"
+                              alt="users icon "
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more-info">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <div class="cancel-icon">
+                    &times;
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <img
+                    class="book-cover-image-carousel"
+                    src="/assets/images/leans.jpg"
+                    alt="book cover"
+                  />
+                  <div class="book-details-carousel">
+                    <div
+                      class="col-sm-12 col-l-9 book-details carosel-book-info"
+                    >
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu</h4>
+                        <h4 class="info">2001</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="col-sm-12 col-l-6 book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule visibility-prop"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/Group 13.png"
+                              alt="users icon"
+                              class="users-icon carousel-users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/Group 6.png"
+                              alt="users icon "
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more-info">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <div class="cancel-icon">
+                    &times;
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <img
+                    class="book-cover-image-carousel"
+                    src="/assets/images/effectiveEngineer.jpg"
+                    alt="book cover"
+                  />
+                  <div class="book-details-carousel">
+                    <div
+                      class="col-sm-12 col-l-9 book-details carosel-book-info"
+                    >
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu</h4>
+                        <h4 class="info">2001</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="col-sm-12 col-l-6 book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule visibility-prop"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/Group 13.png"
+                              alt="users icon"
+                              class="users-icon carousel-users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/Group 6.png"
+                              alt="users icon "
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more-info">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <div class="cancel-icon">
+                    &times;
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <img
+                    class="book-cover-image-carousel"
+                    src="/assets/images/leans.jpg"
+                    alt="book cover"
+                  />
+                  <div class="book-details-carousel">
+                    <div
+                      class="col-sm-12 col-l-9 book-details carosel-book-info"
+                    >
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu</h4>
+                        <h4 class="info">2001</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="col-sm-12 col-l-6 book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule visibility-prop"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/Group 13.png"
+                              alt="users icon"
+                              class="users-icon carousel-users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/Group 6.png"
+                              alt="users icon "
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more-info">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <div class="cancel-icon">
+                    &times;
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row book-section-one">
+              <div class="section-title-container">
+                <h3 class="section-title">Recently Added</h3>
+                <div class="horizontal-rule"></div>
+              </div>
+              <div class="row book-card-conatainer">
+                <div class="col-sm-12 col-l-4 book-card">
+                  <div class="row card-details">
+                    <div class="col-sm-4 book-cover">
+                      <img
+                        src="./assets/images/effectiveEngineer.jpg"
+                        alt="book name"
+                        class="book-cover-image"
+                      />
+                    </div>
+                    <div class="col-sm-8 book-details">
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu - 2009</h4>
+                        <h4 class="info">Motivational</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/usersIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/heartIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-l-4 book-card">
+                  <div class="row card-details">
+                    <div class="col-sm-4 book-cover">
+                      <img
+                        src="./assets/images/effectiveEngineer.jpg"
+                        alt="book name"
+                        class="book-cover-image"
+                      />
+                    </div>
+                    <div class="col-sm-8 book-details">
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu - 2009</h4>
+                        <h4 class="info">Motivational</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/usersIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/heartIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-l-4 book-card">
+                  <div class="row card-details">
+                    <div class="col-sm-4 book-cover">
+                      <img
+                        src="./assets/images/effectiveEngineer.jpg"
+                        alt="book name"
+                        class="book-cover-image"
+                      />
+                    </div>
+                    <div class="col-sm-8 book-details">
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu - 2009</h4>
+                        <h4 class="info">Motivational</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/usersIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/heartIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="section-title-container">
+                <h3 class="section-title">all books</h3>
+                <div class="horizontal-rule"></div>
+              </div>
+              <div class="row book-card-conatainer">
+                <div class="col-sm-12 col-l-4 book-card">
+                  <div class="row card-details">
+                    <div class="col-sm-4 book-cover">
+                      <img
+                        src="./assets/images/effectiveEngineer.jpg"
+                        alt="book name"
+                        class="book-cover-image"
+                      />
+                    </div>
+                    <div class="col-sm-8 book-details">
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu - 2009</h4>
+                        <h4 class="info">Motivational</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/usersIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/heartIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-l-4 book-card">
+                  <div class="row card-details">
+                    <div class="col-sm-4 book-cover">
+                      <img
+                        src="./assets/images/effectiveEngineer.jpg"
+                        alt="book name"
+                        class="book-cover-image"
+                      />
+                    </div>
+                    <div class="col-sm-8 book-details">
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu - 2009</h4>
+                        <h4 class="info">Motivational</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/usersIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/heartIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-l-4 book-card">
+                  <div class="row card-details">
+                    <div class="col-sm-4 book-cover">
+                      <img
+                        src="./assets/images/effectiveEngineer.jpg"
+                        alt="book name"
+                        class="book-cover-image"
+                      />
+                    </div>
+                    <div class="col-sm-8 book-details">
+                      <div class="book-info">
+                        <h4 class="info book-status">Available</h4>
+                        <h4 class="info book-title">The effective Engineer</h4>
+                        <h4 class="info">Edmond leu - 2009</h4>
+                        <h4 class="info">Motivational</h4>
+                      </div>
+                      <div class="book-reaction">
+                        <div class="book-ratings">
+                          <div class="book-ratings-text">
+                            <span class="ratings-text">Ratings:</span
+                            ><span>4.0</span>
+                          </div>
+                          <div class="stars-container">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-star last-star"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="vertical-rule"></div>
+                        <div class="reactions">
+                          <div class="number-of-persons">
+                            <img
+                              src="/assets/images/usersIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>31</div>
+                          </div>
+                          <div class="number-of-love">
+                            <img
+                              src="/assets/images/heartIcon.svg"
+                              alt="users icon"
+                              class="users-icon"
+                            />
+                            <div>29</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="/scripts/index.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
